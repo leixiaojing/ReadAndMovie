@@ -1,0 +1,39 @@
+@import "movielist/movielist.wxss";
+@import "movie-grid/movie-grid.wxss";
+page {
+    background: #fff;
+}
+.movielist-box {
+    margin-top: 30rpx;
+}
+.movielist {
+	background: #ebebeb;
+	margin-top:-30rpx;	
+}
+.search {
+	background: #ebebeb;
+	display:flex;
+	flex-direction:row;
+}
+.search .searchimg {
+	width:26rpx;
+	height:27rpx;
+	margin: auto 20rpx;
+}
+.searchInput {
+	font-size:26rpx;
+	width:600rpx;
+	height:80rpx;
+}
+.clear {
+	width:27rpx;
+	height:27rpx;
+	margin: auto 20rpx;
+}
+.placeholder {
+	color:#858585;
+}
+.search-pannel {
+	position:absolute;
+	top:80rpx;
+}

@@ -1,0 +1,17 @@
+<import src="post-item/post-item-template.wxml" />
+<!--<import src="/pages/post/post-item/post-item-template.wxml"/>-->
+
+<view>
+    <!--vertical 属性表示垂直滚动-->
+    <swiper catchtap="openPostDetail" indicator-dots autoplay="true" interval="10000" circular="{{true}}">
+        <swiper-item><image data-postId="3" src="/images/wx.png"></image></swiper-item>
+        <swiper-item><image data-postId="4" src="/images/vr.png"></image></swiper-item>
+        <swiper-item><image data-postId="5" src="/images/iqiyi.png"></image></swiper-item>
+    </swiper>
+    <block wx:for="{{post_key}}" wx:key="date" wx:for-item="item" wx:for-index="idv">
+        <!--扩展运算符 ... 将一个对象展开-->
+        <view  catchtap="openDetail" data-postId="{{item.postid}}">
+             <template is="postItem" data="{{...item}}"/>
+        </view>
+    </block>
+</view>

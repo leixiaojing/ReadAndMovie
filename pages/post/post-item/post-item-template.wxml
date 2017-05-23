@@ -1,0 +1,17 @@
+<template name="postItem">
+  <view class="post_container">
+    <view class="post_author">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <text class="post_title">{{title}}</text>
+    <image class="post_image" src="{{imgSrc}}"></image>
+    <text class="post_content">{{content}}</text>
+    <view class="post_line">
+      <image src="/images/icon/chat.png"></image>
+      <text>{{reading}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{collection}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,59 @@
+<import src="../stars/stars.wxml"/>
+<view class="container">
+	<image class="bgimage" src="{{movie.maxImg}}" mode="aspectFill"></image>
+	<view class="header" data-src="{{movie.maxImg}}" catchtap="previewImageFunc">
+		<text class="movie_name">{{movie.title}}</text>
+		<text>{{movie.countrie}}<text class="spacedot">·</text>{{movie.year}}</text>
+		<view class="statistics">
+			<view class="like">
+				<text class="red">{{movie.collect_count}}</text>
+				<text>人喜欢</text>
+			</view>
+			<view class="comment">
+				<text class="red">{{movie.comments_count}}</text>
+				<text>条评论</text>
+			</view>
+			<image class="postimage" src="{{movie.maxImg}}" mode="aspectFill"></image>
+		</view>
+	</view>	
+	<view class="flexbox">
+		<text class="original-title">{{movie.original_title}}</text>
+		<view class="detail">
+			<view class="block">
+				<text class="label">评分</text>
+				<template is="starTemplate" data="{{star:movie.star,scroe:movie.average}}"/>
+			</view>
+			<view class="block">
+				<text class="label">导演</text>
+				<text>{{movie.director}}</text>
+			</view>
+			<view class="block">
+				<text class="label">影人</text>
+				<text>{{movie.casts}}</text>
+			</view>
+			<view class="block">
+				<text class="label">类型</text>
+				<text>{{movie.genres}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="brline"></view>
+	<view class="flexbox">
+		<text class="label">剧情简介</text>
+		<view class="briftext">
+			<text>{{movie.summary}}</text>
+		</view>
+	</view>
+	<view class="brline"></view>
+	<view class="flexbox scrollview">
+		<text class="label">影人</text>
+		<scroll-view scroll-x="true" class="scroll-container">
+			<block wx:for="{{movie.castsInfo}}" wx:for-item="casts" wx:key="castsInfo">
+				<view class="castsinfo">
+					<image src="{{casts.img}}"></image>
+					<text>{{casts.name}}</text>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+</view>

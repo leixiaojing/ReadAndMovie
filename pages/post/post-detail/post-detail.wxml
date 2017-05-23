@@ -1,0 +1,23 @@
+<view>
+  <view class="banner">
+    <image class="banner-img" src="{{playing?music.coverImgUrl:imgSrc}}"></image>
+    <image catchtap="playmusic" class="audio" src="{{playing?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+  </view>
+  <view class="article_container">
+    <view class="author">
+      <image src="{{avatar}}"></image>
+      <text class="name">{{author}}</text>
+      <text class="publish">发表于</text>
+      <text class="date">{{publishTime}}</text>
+    </view>
+    <text class="article_title">{{title}}</text>
+    <view class="share">
+      <image catchtap="shareFunc" src="/images/icon/share.png"></image>
+      <image wx:if="{{collected}}" catchtap="collectionFunc" src="/images/icon/collection.png"></image>
+      <image wx:else catchtap="collectionFunc" src="/images/icon/collection-anti.png"></image>
+    </view>
+    <view class="article">
+      <text>{{detail}}</text>
+    </view>
+  </view>
+</view>

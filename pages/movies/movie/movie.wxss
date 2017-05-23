@@ -1,0 +1,13 @@
+@import "../stars/stars.wxss";
+.movie {
+    display: flex;
+    flex-direction: column;
+}
+.movie .moviePost {
+    width: 200rpx;
+    height: 270rpx;
+}
+.movie .movieName {
+    margin: 20rpx 0 14rpx;
+    font-size: 24rpx;
+}

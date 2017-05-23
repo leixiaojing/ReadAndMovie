@@ -1,0 +1,19 @@
+.star {
+    display: flex;
+    flex-direction: row;
+}
+.star image {
+    width: 17rpx;
+    height: 17rpx;
+}
+.star-img {
+    margin-top: 8rpx;
+    display: flex;
+    flex-direction: row;
+    height: 17rpx;
+}
+.star text {
+    margin-left: 20px;
+    color: #1f3463;
+    font-size: 24rpx;
+}

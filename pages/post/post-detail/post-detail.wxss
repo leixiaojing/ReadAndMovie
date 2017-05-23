@@ -1,0 +1,66 @@
+.banner .banner-img {
+    width: 100%;
+    height: 460rpx;
+}
+.audio {
+    width: 110rpx;
+    height: 110rpx;
+    position: absolute;
+    top: 175rpx;
+    left: 50%;
+    margin-left: -55rpx;
+    opacity: .6;
+}
+.article_container {
+    margin: 10px;
+}
+.author image {
+    width: 64rpx;
+    height: 64rpx;
+    vertical-align: middle;
+}
+.author text {
+    vertical-align: middle;
+}
+.author .name {
+    margin: 0 8px;
+    font-size: 32rpx;
+}
+.author .publish {
+    margin-right: 8px;
+    color: #999;
+}
+.author .date {    
+    color: #999;
+    font-size: 28rpx;
+}
+.share {
+    border-bottom: 1px solid #ccc;
+    width: 95%;
+    margin: 10rpx auto 60rpx;
+    height: 40rpx;
+}
+.share image {
+    width: 80rpx;
+    height: 80rpx;
+    vertical-align: middle;
+    float: right;
+    margin-left: 20px;
+}
+.article {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+.article_title {
+    font-size: 36rpx;
+    color: #7a7a7a;
+    margin: 15px 0;
+    display: block;
+    line-height: 28px;
+    font-weight: bold;
+}
+.article-text {
+    margin: 20rpx 0 30rpx;
+}

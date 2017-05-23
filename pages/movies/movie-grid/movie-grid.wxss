@@ -1,0 +1,10 @@
+@import "../movie/movie.wxss";
+
+.movie-grid {
+	margin: 40rpx 21rpx 0;
+	/*必须给定scroll-view高度，才能触发bindscrolltolower事件*/
+}
+.grid-item {
+	float: left;
+	margin: 0 18rpx 40rpx;
+}
